@@ -18,9 +18,9 @@ class Main extends PluginBase{
         $permName_DescArray = [];
         foreach($permArray as $perm)
         {
-            $permName_DescArray[] = TextFormat::DARK_PURPLE."Permission: ".TextFormat::GREEN.$perm->getName().TextFormat::YELLOW." Description: ".$perm->getDescription(); //Message parsing
+            $permName_DescArray[] = TextFormat::DARK_PURPLE."Permission: " . TextFormat::GREEN.$perm->getName() . TextFormat::YELLOW . " Description: " . $perm->getDescription(); //Message parsing
         }
-        $this->getServer()->getLogger()->info("Here are all of the permission nodes:\n" . implode("\n",$permName_DescArray));
+        $this->getServer()->getLogger()->info("Here are all of the permission nodes:\n" . implode("\n", $permName_DescArray));
         return true;
     }
 
