@@ -1,9 +1,18 @@
 ---
 name: ShowPerms
-version: 1.0
+version: 2.0.0
+authors:
+  - ethaniccc
+  - mmm545
 main: ethaniccc\ShowPerms\Main
-api: 3.11.5
+api: 4.0.0
 commands:
  showperms:
   description: Show all the permission nodes!
+  permission: showperms.command
+
+permissions:
+  showperms.command:
+    default: op
+    description: Gives permission to show all the permission nodes
 ...
